@@ -1,0 +1,7 @@
+{
+  "name": "kkulcut-web",
+  "compatibility_date": "2026-10-20",
+  "assets": {
+    "directory": "./public"
+  }
+}

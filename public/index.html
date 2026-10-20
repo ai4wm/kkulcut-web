@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>꿀컷 · Kkulcut</title>
+<meta name="description" content="말로 시키면 컷이 나오는 영상 편집기. 현재 개발 중입니다.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root{
+    --bg:#fffaf0; --fg:#2b2112; --muted:#7a6a4f; --card:#ffffff; --line:#f0e3c4;
+    --honey:#f5a623; --honey-d:#c97d00; --ink:#2b2112;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#17130b; --fg:#f6ecd6; --muted:#b2a07c; --card:#211b0f; --line:#33290f; --honey:#ffb938; --honey-d:#ffd27a; --ink:#17130b; }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:960px; margin:0 auto; padding:0 20px}
+  header{display:flex; align-items:center; justify-content:space-between; padding:22px 0}
+  .logo{font-weight:800; font-size:22px; letter-spacing:-.02em; display:flex; align-items:center; gap:10px}
+  .logo i{width:26px; height:26px; border-radius:8px; background:var(--honey); display:inline-block; position:relative}
+  .logo i::after{content:""; position:absolute; left:50%; top:50%; width:12px; height:2px; background:var(--ink); transform:translate(-50%,-50%) rotate(-35deg)}
+  .badge{font-size:13px; color:var(--honey-d); border:1px solid var(--line); border-radius:999px; padding:4px 12px; background:var(--card)}
+  .hero{padding:72px 0 56px; text-align:center}
+  .hero h1{font-size:clamp(40px,8vw,72px); line-height:1.1; margin:0 0 18px; letter-spacing:-.04em; font-weight:800}
+  .hero h1 em{font-style:normal; background:linear-gradient(transparent 62%, color-mix(in srgb, var(--honey) 55%, transparent) 62%)}
+  .hero p{margin:0 auto; max-width:560px; color:var(--muted); font-size:clamp(16px,2.4vw,19px)}
+  .cta{margin-top:34px; display:inline-flex; gap:10px; align-items:center; padding:14px 24px; border-radius:14px; background:var(--honey); color:var(--ink); font-weight:700; text-decoration:none}
+  .cta[aria-disabled="true"]{opacity:.85; cursor:default}
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; padding:24px 0 72px}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:18px; padding:26px}
+  .card b{display:block; font-size:18px; margin-bottom:8px; letter-spacing:-.02em}
+  .card span{color:var(--muted); font-size:15px}
+  footer{border-top:1px solid var(--line); padding:26px 0 40px; color:var(--muted); font-size:13px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo"><i></i>꿀컷</div>
+    <span class="badge">개발 중</span>
+  </header>
+
+  <section class="hero">
+    <h1>편집은 <em>꿀</em>처럼 달게,<br>컷은 말 한마디로.</h1>
+    <p>영상 편집이 처음이어도 괜찮아요. 하고 싶은 편집을 말로 적으면 타임라인에 바로 반영되는 데스크톱 영상 편집기, 꿀컷을 만들고 있습니다.</p>
+    <a class="cta" aria-disabled="true">곧 만나요 · 준비 중</a>
+  </section>
+
+  <section class="grid" aria-label="꿀컷이 목표로 하는 것">
+    <div class="card"><b>말로 하는 편집</b><span>"세로로 바꿔줘", "제목 넣어줘"처럼 자연어로 요청하면 편집안을 만들고, 확인한 뒤에만 적용합니다.</span></div>
+    <div class="card"><b>내 컴퓨터에서</b><span>영상 원본을 업로드하지 않고 내 PC에서 편집하고 내보냅니다.</span></div>
+    <div class="card"><b>언제든 되돌리기</b><span>직접 한 편집도, AI가 한 편집도 실행 취소로 한 번에 되돌릴 수 있습니다.</span></div>
+  </section>
+
+  <footer>
+    <span>© 2026 kkulcut</span>
+    <span>kkulcut.com</span>
+  </footer>
+</div>
+</body>
+</html>
