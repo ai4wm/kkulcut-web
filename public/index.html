@@ -37,6 +37,13 @@
   .card{background:var(--card); border:1px solid var(--line); border-radius:18px; padding:26px}
   .card b{display:block; font-size:18px; margin-bottom:8px; letter-spacing:-.02em}
   .card span{color:var(--muted); font-size:15px}
+  .apps{padding:0 0 72px}
+  .apps h2{font-size:20px; margin:0 0 14px; letter-spacing:-.02em}
+  .app{display:flex; gap:18px; align-items:center; background:var(--card); border:1px solid var(--line); border-radius:18px; padding:22px 26px}
+  .app b{display:block; font-size:19px; margin-bottom:6px; letter-spacing:-.02em}
+  .app span{display:block; color:var(--muted); font-size:15px}
+  .app .links{margin-top:10px; font-size:14px}
+  .app a{color:var(--honey-d)}
   footer{border-top:1px solid var(--line); padding:26px 0 40px; color:var(--muted); font-size:13px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px}
 </style>
 </head>
@@ -57,6 +64,20 @@
     <div class="card"><b>말로 하는 편집</b><span>"세로로 바꿔줘", "제목 넣어줘"처럼 자연어로 요청하면 편집안을 만들고, 확인한 뒤에만 적용합니다.</span></div>
     <div class="card"><b>내 컴퓨터에서</b><span>영상 원본을 업로드하지 않고 내 PC에서 편집하고 내보냅니다.</span></div>
     <div class="card"><b>언제든 되돌리기</b><span>직접 한 편집도, AI가 한 편집도 실행 취소로 한 번에 되돌릴 수 있습니다.</span></div>
+  </section>
+
+  <section class="apps" aria-label="안드로이드 앱">
+    <h2>안드로이드 앱</h2>
+    <div class="app">
+      <div>
+        <b>Mellie (멜리)</b>
+        <span>카톡·문자 알림을 큰 글씨로 보여 주고 목소리로 읽어 드립니다. 인터넷 권한 없이 폰 안에서만 동작합니다. Google Play 출시 준비 중입니다.</span>
+        <div class="links">
+          <a href="https://ai4wm.github.io/mellie-privacy/">개인정보처리방침</a> ·
+          <a href="mailto:support@kkulcut.com">support@kkulcut.com</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer>
